@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum.scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Proyecto-ticma</title>
+    <link rel="stylesheet" href="Estilos.css">
+
+
+</head>
+<body>
+    <div class="contenedor-header">
+        <header>
+
+            <div class="red">
+                <div class="linkedin">
+                    <a href="https://www.linkedin.com/in/pablo-risi-b457b1163/" class="btnt-lin" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+
+                <button>
+                    <a href="Download/cv.pdf" download="cv">
+                        <i class="fa-solid fa-download"> CV </i>
+                    </a>
+                </button>
+            </div>
+
+
+            <nav id="nav" class="responsive">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()"> Inicio </a></li>
+                    <li><a href="#proyectos"onclick="seleccionar()"> Proyectos </a></li>
+                    <li><a href="#informacion"onclick="seleccionar()"> Informacíon </a></li>
+                    <li><a href="#skills"onclick="seleccionar()"> Conocimientos </a></li>
+                    <li><a href="#contacto"onclick="seleccionar()"> Contacto</a></li>
+                    <li><a href="#redes"onclick="seleccionar()"> Redes</a></li>
+                </ul>
+            </nav>
+            
+            <div class="nav-responsive" onclick="mostrarOcultarMenu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    
+    <!--Inicio-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-foto">
+            <div class="contenedor-img">
+                <img src="Img/Perfil.jpg" alt="">
+                <h1> PABLO RISI</h1>
+                <h2> Desarrollador FrontEnd</h2>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="informacion" class="informacion">
+        <div class="contenido-seccion">
+        
+            <div class="fila">
+
+                <div class="col">
+            <h3> Informacíon </h3>
+            <ul>
+                <li>
+                    <strong> fecha de nacimiento </strong>
+                    01/11/1995
+                </li>
+            
+                <li>
+                    <strong> Ciudad de residencia </strong>
+                    Cipolletti, Rio Negro
+                </li>
+
+                <li>
+                    <strong> Email </strong>
+                    Pablomrisi@hotmail.com
+                </li>
+                <li>
+                <strong> Cargo </strong>
+                FREELANCE
+            </li>
+            </ul>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="proyectos" class="proyecto">
+        <div class="contenido-seccion">
+            <h2> PROYECTOS </h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="Img/proyecto.png" alt="">
+                    <p> Proyecto 1</p>
+
+                    <img src="Img/proyecto.png" alt="">
+                    <p> Proyecto 2 </p>
+
+                    <img src="Img/proyecto.png" alt="">
+                    <p> Proyecto 3 </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2> Conocimientos </h2>
+            <div class="skill">
+                <div class="fila">
+                    
+                    <div class="html">
+                        <img src="Img/html.png" alt="html">
+                            <span> <br> HTML </span>
+                    </div>
+                
+                    <div class="css">
+                        <img src="img/css.png" alt="css">    
+                            <span> <br> CSS</span>
+                    </div>
+
+                    <div class="javascript">
+                        <img src="Img/javascript.png" alt="java">
+                        <span> <br> Javascript </span>
+                    </div>
+
+                    <div class="excel">
+                        <img src="Img/excel.png" alt="excel">
+                        <span> <br> Excel</span>
+                    </div>
+
+                    <div class="powerbi">
+                    <img src="Img/powerbi.png" alt="power">
+                        <span> <br> Power BI</span>
+                    </div>
+
+                    <div class="photoshop">
+                        <img src="Img/photo.png" alt="phoo">
+                        <span> <br>  Photoshop </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>   
+
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+        <h2> CONTACTO </h2>
+
+            <div class="fila">
+            
+                <div class="col">
+                    <input type="text" placeholder="Tú nombre">
+                    <input type="text" placeholder="Telefono">
+                    <input type="text" placeholder="Correo electronico">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="mensaje"> </textarea>
+                        <button>
+                        <p>Enviar</p>
+                        </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="redes" class="redes">
+        <div class="contenido-seccion">
+            <div class="fila">
+                <div class="redes">
+                    
+                    <a href="https://github.com/RisiPablo" class="btn-git" target="_blank"> 
+                        <i class="fa-brands fa-github"></i>
+                    </a> 
+                    
+                
+                    <a href="https://wa.me//542994707701" class="btn-wsp" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                
+                
+                    <a href="https://linkedin.com/in/pablo-risi-b457b1163/" class="btn-lin" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+    <p> Creado y diseñado por Pablo Risi.  Todos los derechos reservados 2023</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="funcion.js"></script>
+</body>
+</html>
