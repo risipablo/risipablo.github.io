@@ -1,0 +1,499 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Work+Sans:wght@100;300;400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
+
+*{
+    
+    box-sizing: border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    scroll-behavior: smooth;
+    background-color: rgb(9, 102, 221);
+
+}
+
+
+.contenedor-header li{
+    list-style: none;
+}
+
+.contenedor-header a{
+    text-decoration: none;
+}
+
+
+.contenedor-header{
+    background-color:  rgb(47, 137, 253);
+    border-bottom: 1px solid #fffefe ;
+    position:fixed;
+    z-index: 100;
+    width: 100%;
+}
+
+.contenedor-header header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 25px;
+    
+}
+
+
+.contenedor-header header .red {
+    display: flex;
+    
+}
+
+.contenedor-header .linkedin{
+    margin:0px 10px;
+    
+}
+
+
+.contenedor-header .red .linkedin:hover{
+    color: rgb(255, 255, 255);
+    transition: .3s;
+    cursor: pointer;
+}
+
+
+.contenedor-header header button{
+    margin: 0px 20px;
+    background-color: transparent;
+    border: none;
+    padding: 0px 32px;
+    font-size: 12px;
+    z-index: 20;
+    cursor: pointer;
+
+}
+
+
+.contenedor-header button:hover{
+    color: rgb(130, 243, 206)
+    
+}
+
+
+
+.contenedor-header ul{
+    display: flex;
+
+}
+
+.contenedor-header header nav ul li a{
+    font-family:"Montserrat";
+    margin: 0px 25px;
+    padding: 8px;
+    color: #fff;
+    transition: .7s;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.contenedor-header header nav ul li a:hover{
+    color:#191a1a;
+
+}
+
+
+
+.nav-responsive{
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+
+.inicio{
+    background-image: linear-gradient(to top,rgba( 30,35,38,.8), rgba( 30,35,38,1)),
+    url(../Img/fondo.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+}
+
+.contenido-foto{
+    max-width: 400px;
+    text-align: center;
+    padding:20px;
+    margin: auto;
+
+}
+.contenido-foto h1{
+    
+    font-family: "Montserrat";
+    padding: 20px;
+    letter-spacing: 1px;
+    font-size: 40px;
+}
+.contenido-foto h2{
+    font-family: "Montserrat";
+    margin: 20px;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+.contenido-foto img{
+    margin-bottom: 60px;
+    border: 10px solid rgb(244, 244, 248);
+    display: flex;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: .7s;
+    
+}
+
+.contenido-foto img:hover{
+    transform: scale(1.1);
+    border-color: #e94c4c;
+    
+}
+
+
+.informacion{
+
+background-color: #fff;
+color: rgb(0, 0, 0);
+padding: 50px 20px;
+}
+
+.informacion ul li{
+    text-decoration: none;
+    list-style: none;
+}
+
+.informacion .contenido-seccion{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.informacion .fila{
+    display: flex;
+}
+
+.informacion .fila .col{
+    width: 50%;
+}
+
+.informacion .fila .col h3{
+    font-size: 24px;
+    
+    padding: 30px 0px;
+}
+
+.informacion .fila .col ul li{
+    margin:12px 0px;
+}
+
+.informacion .fila .col ul li strong{
+    display: inline-block;
+    color: black;
+    width:130px;
+    
+}
+
+
+.skills .contenido-seccion {
+    background-color: #fff;
+    padding: 60px;
+    margin: auto;
+}
+
+.skills .contenido-seccion .skill .fila {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+
+.skills .contenido-seccion h2{
+    text-align: center;
+    padding-bottom: 70px;
+    margin-top: 0px 40px;
+    font-size: 40px;
+}
+
+.contenido-seccion .skill img{
+    height: 80px;
+    border-radius: 30px;
+    margin: 20px 20px;
+    padding: 0px 40px;
+    transition: .3s;
+    cursor: pointer;
+    
+}
+
+.contenido-seccion .skill img:hover{
+    transform: scale(1.3)
+
+}
+
+
+.proyecto .contenido-seccion {
+    text-align: center;
+    
+}
+
+.proyecto .contenido-seccion h2{
+    font-size: 40px;
+    color: #fff;
+    padding: 50px;
+}
+
+.proyecto .contenido-seccion p{
+    color: #fff;
+    font-size: 20px;
+    padding-bottom: 60px;
+    
+}
+
+.contenido-seccion .proyecto img{
+    width: 140px;
+    height: 140px;
+    margin: 20px;
+    transition: .7s;
+    cursor: pointer;
+}
+
+.contenido-seccion .proyecto img:hover{
+    transform:scale(1.3);
+
+
+}
+
+.contacto .contenido-seccion{
+    max-width: 1100px;
+    padding: 50px;
+    margin: auto;
+}
+
+.contacto h2{
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    padding: 50px ;
+    
+}
+
+.contacto .fila{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto .col{
+    width:80%;
+    padding: 10px;
+    position:relative;
+}
+
+.contacto .col input, .contacto .col textarea{
+    display:flex;
+    text-align: center;
+    width: 100%;
+    border:none;
+    padding: 20px 10px;
+    margin-bottom: 25px;
+    background-color: rgb(208, 229, 248);
+    font-size: 12px;
+    border-radius: 20px;
+}
+
+
+.contacto .contenido-seccion .col button{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    cursor: pointer;
+    background-color: #e94c4c;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 20px;
+    transition: all.3s;
+    box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
+    line-height: 1.25;
+
+    
+    
+}
+
+.contacto button p{
+    color: #fff;
+    font-size: 16px;
+    
+}
+
+.contacto button:hover{
+    opacity: 0.7;
+}
+
+.redes .contenido-seccion{
+    text-align: center;
+    padding: 70px 0px 30px;
+    
+    
+
+}
+
+.contenido-seccion .redes a{
+    color: #fff;
+    text-decoration: none;
+    width: 60px;
+    height: 60px;
+    line-height: 40px;
+    margin: 40px 20px;
+    font-size: 30px;
+    cursor: pointer;
+    
+}
+
+
+.contenido-seccion .redes .btn-git i:hover {
+    transition: .9s;
+    transform: scale(1.6);
+    color:rgb(233, 4, 4);
+}
+
+.contenido-seccion .redes .btn-wsp i:hover{
+    color:#27e22a;
+    transform: scale(1.6);
+    transition: .9s;
+}
+
+.contenido-seccion .redes .btn-lin i:hover{
+    color: rgba(4, 4, 241, 0.911);
+    transform: scale(1.6);
+    transition: .9s;
+}
+
+/*
+.contenido-seccion  .redes .what a:hover{
+    color: green;
+}
+
+.contenido-seccion .redes .git a:hover{
+    color:red;
+}
+
+.contenido-seccion .fila .redes .lin a:hover{
+    color: blue;
+}
+*/
+footer{
+    text-align: center;
+    background-color: #fff;
+    color: #080808;
+    margin: auto;
+    
+}
+footer p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 20px;
+}
+
+
+/*       RESPONSIVE        */
+
+
+@media screen and (max-width:1080px){
+    nav{
+        display: none;
+        
+    }
+    
+    .nav-responsive{
+        display: block;
+        color: #fff;
+        left: 100%;
+        
+    }
+
+    nav.responsive{
+        display: block;
+        position: fixed;
+        right: 0;
+        margin: 0;
+        top:75px;
+        background-color:#242323;
+        text-align: center;
+
+
+    }
+
+    nav.responsive ul{
+        display: block !important;
+    }
+
+
+    nav.responsive ul li{
+        display: block;
+        border-bottom: 1px solid #ffffff;
+        padding: 20px;
+    }
+
+    .contenedor-header header nav ul li a:hover{
+        color:#2efce0;
+    
+    }
+
+    .contenido-foto img{
+        width: 90%;
+    }
+
+
+    .contenido-seccion .skill .fila{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    
+    .contenedor-header .linkedin{
+        display: block;
+
+    }
+    .contacto .fila{
+
+        display:flex;
+    }
+    
+    .contacto .fila .col{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:499px){
+    .informacion .fila{
+        display: block;
+    }
+
+    .informacion .fila .col{
+        width:fit-content;
+    }
+
+    .proyecto .contenido-seccion{
+        display: block;
+        width:100%;
+    }
+
+    .contenido-seccion .proyecto img{
+        max-width: 100%;
+    }
+
+}
+
